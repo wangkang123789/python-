@@ -1,0 +1,13 @@
+1、首先判断是否本地有库。
+      没有git库时：
+	   先直接将仓库的URL进行粘贴，再使用git clone 仓库URL  将仓库clone到本地
+   再将所要上传的代码传至该库内，然后执行git add 和 git commit -m 的命令。ps：
+      多使用git status 来查看库的状态，最后使用git push origin master/main来上传
+      其中要注意的是，如果第一次上传失败，要使用git push -u origin master/main继续上
+      传一遍。
+   
+   有git库时：（意思是某个github的库已经在本地了）
+	    先进入该库，然后使用打开git bash 和 git init  然后输入git remote add origin 仓库的URL
+   命令，关联远程仓库。再输入git pull origin master/main 来同步远程仓库和本地仓库。此时可以看到远
+       程仓库的一些文件会下载到本地。再将需要上传的代码传至该库中，使用git add 和 git commit -m 来将内容
+       传至本地库，再使用git push origin master/main 将代码传至远程仓库。
