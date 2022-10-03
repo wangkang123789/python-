@@ -1,3 +1,2 @@
 # python-
-#学习python要加油
-#PUSH是玄学
+#学习python也要加油呀
